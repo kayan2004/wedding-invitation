@@ -1,0 +1,1654 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roudi &amp; Rayane</title>
+    <!-- Mobile Optimization -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#B68C6B">
+    <!-- Canonical URL for URL canonicalization -->
+    <link rel="canonical" href="https://digitalinvitation.me/roudi-and-rayane-7" />
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="keywords"
+        content="digital invitation, wedding invitation, online invitation cards, digital wedding cards, e-invitation, virtual invitation, online RSVP, digital save the date, online wedding cards, create wedding invitation online, wedding website, engagement invitation">
+    <meta name="author" content="Digital Invitation">
+    <!-- Language and locale tags for multilingual SEO -->
+    <meta property="og:locale" content="en" />
+    <meta name="language" content="en">
+    <link rel="alternate" hreflang="x-default" href="https://digitalinvitation.me">
+    <link rel="alternate" hreflang="en" href="https://digitalinvitation.me/chris-and-karen-7">
+
+
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="csrf-token" content="vKveBNUSjiMf0Rv88YWHJIfNzm9HLVPTj9cMGVzr">
+    <meta name="description" content="Create digital invitations for weddings &amp; events. Add photos, track RSVPs, share instantly, and go eco-friendly with an affordable paperless alternative." />
+
+    <!-- Social Media Integration (defaults; pages can override via ) -->
+    <meta property="og:site_name" content="Digital Invitation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://digitalinvitation.me/chris-and-karen-7" />
+   
+    <meta name="twitter:site" content="@digitalinvitation" />
+    <meta name="twitter:creator" content="@digitalinvitation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roudi &amp;amp; Rayane" />
+    <meta name="twitter:description" content="Create digital invitations for weddings &amp; events. Add photos, track RSVPs, share instantly, and go eco-friendly with an affordable paperless alternative." />
+    <meta name="twitter:image" content="https://digitalinvitation.me/images/favicon-new.png" />
+
+    <!-- Favicon and App Icons -->
+    <!-- favicon: place a favicon.png in the images/ folder and update this tag -->
+    
+    <!-- IndexNow for search engine indexing -->
+    <meta name="indexnow" content="a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6" />
+
+        
+    <meta property="og:url" content="https://digitalinvitation.me/chris-and-karen-7">
+    <meta property="og:type" content="website">
+    <meta name="google" content="notranslate">
+    <meta property="og:title" content="Roudi &amp; Rayane&#039;s Wedding">
+    <meta property="og:description" content="You&#039;re invited to Roudi &amp; Rayane&#039;s Wedding">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:domain" content="digitalinvitation.me">
+    <meta property="twitter:url" content="https://digitalinvitation.me/chris-and-karen-7">
+    <meta name="twitter:title" content="Roudi &amp; Rayane&#039;s Wedding">
+    <meta name="twitter:description" content="You&#039;re invited to Roudi &amp; Rayane&#039;s Wedding">
+
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RQFFEXKR7C');
+    </script>
+
+        <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sonner.css">
+    <style>
+        .rsvp-btn-selected {
+            background-color: #ffffff;
+            border-color: hsl(var(--wedding-rose)) !important;
+            color: hsl(var(--wedding-rose)) !important;
+        }
+        .rsvp-btn-selected svg {
+            color: hsl(var(--wedding-rose)) !important;
+            stroke: hsl(var(--wedding-rose)) !important;
+            fill: hsl(var(--wedding-rose)) !important;
+        }
+
+        .rsvp-attendee-card {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+        .rsvp-attendee-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 44px 44px;
+            align-items: center;
+            gap: 0.75rem;
+            width: 100%;
+            max-width: 100%;
+        }
+        .rsvp-attendee-name {
+            min-width: 0;
+            width: 100%;
+        }
+        .rsvp-attendee-toggle {
+            width: 44px;
+            min-width: 44px;
+            height: 44px;
+            padding: 0;
+            touch-action: manipulation;
+        }
+        .rsvp-attendee-toggle svg {
+            pointer-events: none;
+        }
+        .rsvp-attendee-toggle-selected {
+            background-color: hsl(var(--wedding-rose)) !important;
+            border-color: hsl(var(--wedding-rose)) !important;
+            color: #ffffff !important;
+        }
+        .rsvp-attendee-toggle-selected:hover {
+            background-color: hsl(var(--wedding-rose)) !important;
+        }
+        .rsvp-attendee-toggle-selected svg {
+            color: #ffffff !important;
+            stroke: #ffffff !important;
+        }
+        @media (max-width: 360px) {
+            .rsvp-attendee-card {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .rsvp-attendee-row {
+                grid-template-columns: minmax(0, 1fr) 40px 40px;
+                gap: 0.5rem;
+            }
+            .rsvp-attendee-toggle {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+            }
+        }
+
+        .hero-cake-wrap {
+            width: 22rem;
+            height: 22rem;
+        }
+
+        /* ---- Hero photo frame (replaces the 3D cake) ---- */
+        .hero-photo-frame {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            background: linear-gradient(145deg, hsl(var(--wedding-blush) / 0.55), hsl(var(--wedding-ivory)));
+            border: 7px solid hsl(var(--wedding-ivory));
+            outline: 1px solid hsl(var(--wedding-gold) / 0.5);
+            outline-offset: 7px;
+            box-shadow:
+                0 34px 60px -18px hsl(var(--wedding-rose) / 0.4),
+                inset 0 0 0 1px hsl(var(--wedding-gold) / 0.35);
+        }
+
+        .hero-photo-frame img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-photo-placeholder {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            text-align: center;
+            padding: 1.5rem;
+            color: hsl(var(--wedding-rose));
+        }
+
+        .hero-photo-placeholder svg {
+            width: 2.75rem;
+            height: 2.75rem;
+            opacity: 0.65;
+        }
+
+        .hero-photo-placeholder .hero-photo-title {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-photo-placeholder .hero-photo-hint {
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: hsl(var(--wedding-bronze) / 0.7);
+        }
+
+        .amelia-hero-name {
+            font-size: 3.75rem !important;
+            line-height: 0.95;
+        }
+
+        .amelia-timeline-card-shell {
+            width: calc(100% - 4rem);
+            flex: 1 1 auto;
+        }
+
+        .amelia-timeline-card-shell > .bg-card {
+            width: 100%;
+        }
+
+        .amelia-timeline-directions {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            margin-top: 1rem;
+            padding: 0.6rem 0.95rem;
+            border: 1px solid hsl(var(--wedding-rose) / 0.24);
+            border-radius: 999px;
+            background: linear-gradient(135deg, hsl(var(--wedding-blush) / 0.44), hsl(var(--wedding-ivory) / 0.92));
+            color: hsl(var(--wedding-rose));
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 0.73rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 10px 22px hsl(var(--wedding-rose) / 0.12);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .amelia-timeline-directions:hover {
+            color: hsl(var(--wedding-rose));
+            border-color: hsl(var(--wedding-rose) / 0.45);
+            box-shadow: 0 14px 28px hsl(var(--wedding-rose) / 0.18);
+            transform: translateY(-1px);
+        }
+
+        .amelia-request-card {
+            width: min(100%, 720px);
+            margin: 0 auto;
+            border-radius: 1.5rem;
+            text-align: center;
+        }
+
+        .amelia-request-logo {
+            display: block;
+            width: 96px;
+            max-height: 96px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        .amelia-request-quote,
+        .amelia-request-line {
+            white-space: pre-line;
+        }
+
+        .amelia-request-families {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin: 1.75rem 0 1.5rem;
+        }
+
+        .amelia-request-family {
+            white-space: pre-line;
+        }
+
+        .amelia-request-names {
+            margin: 2rem 0 1.15rem;
+            color: hsl(var(--wedding-bronze));
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.35rem, 6vw, 4rem);
+            line-height: 1.05;
+        }
+
+        .amelia-request-date {
+            margin: 0;
+            color: hsl(var(--foreground));
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+            line-height: 1.5;
+        }
+
+        .amelia-request-time {
+            margin: 0.6rem 0 0;
+            color: hsl(var(--wedding-bronze));
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(1.45rem, 3.1vw, 2rem);
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .amelia-request-date-block {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: min(100%, 16rem);
+            margin-top: 1.6rem;
+            padding: 1rem 1.75rem;
+            border-top: 1px solid hsl(var(--wedding-blush) / 0.78);
+            border-bottom: 1px solid hsl(var(--wedding-blush) / 0.78);
+        }
+
+        @media (min-width: 768px) {
+            .amelia-hero-name {
+                font-size: 5.5rem !important;
+            }
+
+            .amelia-timeline-card-shell {
+                width: calc(50% - 2rem);
+                flex: 0 0 calc(50% - 2rem);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-cake-wrap {
+                width: 30rem;
+                height: 30rem;
+            }
+
+            .amelia-hero-name {
+                font-size: 7.25rem !important;
+            }
+        }
+
+        [data-scroll-reveal] {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 850ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 850ms cubic-bezier(0.22, 1, 0.36, 1);
+            transition-delay: var(--reveal-delay, 0ms);
+            will-change: opacity, transform;
+        }
+
+        [data-scroll-reveal][data-reveal-style="fade-up"] {
+            transform: translateY(28px);
+        }
+
+        [data-scroll-reveal][data-reveal-style="slide-left"] {
+            transform: translateX(-34px);
+        }
+
+        [data-scroll-reveal][data-reveal-style="slide-right"] {
+            transform: translateX(34px);
+        }
+
+        [data-scroll-reveal][data-reveal-style="soft-zoom"] {
+            transform: translateY(18px) scale(0.975);
+        }
+
+        [data-scroll-reveal][data-reveal-style="rise"] {
+            transform: translateY(32px) rotate(0.45deg);
+        }
+
+        [data-scroll-reveal].is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            [data-scroll-reveal] {
+                opacity: 1;
+                transform: none;
+                transition: none;
+                will-change: auto;
+            }
+        }
+
+        #music-toggle {
+            z-index: 2147483647 !important;
+            pointer-events: auto !important;
+        }
+
+        #music-toggle svg {
+            pointer-events: none;
+        }
+
+        .lang-switch-btn {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .lang-switch-btn:hover,
+        .lang-switch-btn:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-color: white;
+        }
+
+    </style>
+
+    <!-- Preload CSS files -->
+    
+    
+    
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+
+    
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digital Invitation",
+            "url": "https://digitalinvitation.me",
+            "image": "https://digitalinvitation.me/images/favicon-new.png",
+            "description": "Send elegant online invitations for your wedding, engagement, or special event. Customize your invitations with our easy-to-use tools.",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://digitalinvitation.me/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+</head>
+
+<body class=" lang-en">
+    <div id="main" class="" data-language="en">
+    <script>
+    (function(){
+        var p=new URLSearchParams(window.location.search);
+        var s=p.get('s');
+        var sMax=['1','2','3'].includes(s)?parseInt(s,10):1;
+        var EVENT_CODES={'a7f3':'full'};
+        var eventLevel=EVENT_CODES[p.get('k')]||'ceremony_only';
+        window.__wedding={sMax:sMax,eventLevel:eventLevel};
+    })();
+    </script>
+
+    <div class="min-h-screen bg-background">
+        <main style="opacity: 1">
+            
+            
+            
+            
+            
+                            <audio id="bg-music" src="music/maksymmalko-wedding-wedding-trailer-music-544982.mp3" loop="" preload="auto" autoplay=""></audio>
+                <button id="music-toggle"
+                    class="fixed bottom-6 right-6 z-[80] w-12 h-12 rounded-full bg-card shadow-lg border border-wedding-blush/30 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                    title="Mute music"
+                    style="opacity: 1; transform: none"
+                    onclick="toggleMusic()">
+                    <div>
+                        <svg id="music-icon-on" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-volume2 w-5 h-5 text-wedding-rose">
+                            <path
+                                d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z">
+                            </path>
+                            <path d="M16 9a5 5 0 0 1 0 6"></path>
+                            <path d="M19.364 18.364a9 9 0 0 0 0-12.728"></path>
+                        </svg>
+                        <svg id="music-icon-off" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-volume-x w-5 h-5 text-wedding-rose" style="display: none;">
+                            <path
+                                d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z">
+                            </path>
+                            <line x1="22" y1="9" x2="16" y2="15"></line>
+                            <line x1="16" y1="9" x2="22" y2="15"></line>
+                        </svg>
+                    </div>
+                </button>
+            
+            
+            <section
+                class="min-h-screen flex flex-col items-center justify-center px-4 py-16 relative">
+                <div class="absolute inset-0 wedding-gradient opacity-50"></div>
+                <div class="text-center mb-8 relative z-10" style="opacity: 1; transform: none">
+                    <h1
+                        class="amelia-hero-name font-script text-3xl md:text-5xl lg:text-7xl wedding-text-gradient mb-2 py-2 px-5">
+                        Roudi
+                    </h1>
+                    <span class="font-script text-3xl md:text-4xl text-wedding-gold inline-block my-2"
+                        style="transform: scale(1.09492)">&amp;</span>
+                    <h1 class="amelia-hero-name font-script text-3xl md:text-5xl lg:text-7xl wedding-text-gradient py-2 px-4">
+                        Rayane
+                    </h1>
+                </div>
+                <p class="font-serif text-lg md:text-xl tracking-[0.3em] text-foreground/70 uppercase mb-12 relative z-10"
+                    style="opacity: 1">
+                                            August 23, 2026
+                                    </p>
+                <div class="relative hero-cake-wrap"
+                    style="opacity: 1; transform: none">
+                    <div class="hero-photo-frame">
+                        <div class="hero-photo-placeholder" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                            </svg>
+                            <span class="hero-photo-title">Your photo here</span>
+                            <span class="hero-photo-hint">images/hero.jpg</span>
+                        </div>
+                        <img src="images/hero.jpg" alt="Roudi &amp; Rayane"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="absolute inset-0 -z-10 blur-3xl opacity-30">
+                        <div class="w-full h-full rounded-full bg-wedding-blush"></div>
+                    </div>
+                </div>
+                <div class="section-divider mt-16" style="transform: none"></div>
+            </section>
+
+            
+                            <section class="py-20 px-4 bg-wedding-ivory/50">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4"
+                            style="opacity: 1; transform: translateY(0px)">
+                            Counting Down to Forever
+                        </h2>
+                        <div class="section-divider mb-12" style="transform: scaleX(1)"></div>
+                        <div id="countdown" class="flex justify-center gap-4 md:gap-8"
+                            data-deadline="2026-08-23T17:30:00+00:00">
+                            <div class="flex flex-col items-center" style="opacity: 1; transform: translateY(0px);">
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-card rounded-lg shadow-lg border border-wedding-blush/30">
+                                    <span id="cd-days"
+                                        class="font-serif text-2xl md:text-4xl font-semibold text-wedding-rose"
+                                        style="opacity: 1; transform: none">00</span>
+                                </div>
+                                <span
+                                    class="font-sans text-xs md:text-sm text-muted-foreground mt-2 tracking-wider uppercase">Days</span>
+                            </div>
+                            <div class="flex flex-col items-center" style="opacity: 1; transform: translateY(0px);">
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-card rounded-lg shadow-lg border border-wedding-blush/30">
+                                    <span id="cd-hours"
+                                        class="font-serif text-2xl md:text-4xl font-semibold text-wedding-rose"
+                                        style="opacity: 1; transform: none">00</span>
+                                </div>
+                                <span
+                                    class="font-sans text-xs md:text-sm text-muted-foreground mt-2 tracking-wider uppercase">Hours</span>
+                            </div>
+                            <div class="flex flex-col items-center" style="opacity: 1; transform: translateY(0px);">
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-card rounded-lg shadow-lg border border-wedding-blush/30">
+                                    <span id="cd-minutes"
+                                        class="font-serif text-2xl md:text-4xl font-semibold text-wedding-rose"
+                                        style="opacity: 1; transform: none">00</span>
+                                </div>
+                                <span
+                                    class="font-sans text-xs md:text-sm text-muted-foreground mt-2 tracking-wider uppercase">Minutes</span>
+                            </div>
+                            <div class="flex flex-col items-center" style="opacity: 1; transform: translateY(0px);">
+                                <div
+                                    class="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-card rounded-lg shadow-lg border border-wedding-blush/30">
+                                    <span id="cd-seconds"
+                                        class="font-serif text-2xl md:text-4xl font-semibold text-wedding-rose"
+                                        style="opacity: 1; transform: none">00</span>
+                                </div>
+                                <span
+                                    class="font-sans text-xs md:text-sm text-muted-foreground mt-2 tracking-wider uppercase">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                            <section class="py-20 px-4">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4"
+                            style="opacity: 1; transform: translateY(0px)">
+                            Request Presence
+                        </h2>
+                        <div class="section-divider mb-12" style="transform: scaleX(1)"></div>
+                        <div class="amelia-request-card">
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZGF0YS1zaGFwZT0iUm9zZSBXcmVhdGgiIGRhdGEtc2hhcGUtY29sb3I9IiM4QjQ1NTciIGRhdGEtdGV4dC1jb2xvcj0iI0Q0QTU3NCIgZGF0YS10ZXh0LXk9IjQ4Ij4KICA8Zz4KICAgICAgICA8ZWxsaXBzZSBjeD0iNTAiIGN5PSI1MCIgcng9IjQyIiByeT0iNDIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhCNDU1NyIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuMzUiIC8+CiAgICAgICAgPGVsbGlwc2UgY3g9IjUwIiBjeT0iNTAiIHJ4PSIzOCIgcnk9IjM4IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjQ1NTciIHN0cm9rZS13aWR0aD0iMC42IiBvcGFjaXR5PSIwLjIiIC8+CiAgICAgICAgPCEtLSBSb3NlcyBhcm91bmQgdGhlIHdyZWF0aCAtLT4KICAgICAgICA8ZyBvcGFjaXR5PSIwLjg1Ij4KICAgICAgICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iOCIgcj0iNCIgZmlsbD0iIzhCNDU1NyIgb3BhY2l0eT0iMC43IiAvPgogICAgICAgICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI4IiByPSIyIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjkiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjkyIiByPSI0IiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjciIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjkyIiByPSIyIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjkiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSI4IiBjeT0iNTAiIHI9IjMuNSIgZmlsbD0iIzhCNDU1NyIgb3BhY2l0eT0iMC42IiAvPgogICAgICAgICAgPGNpcmNsZSBjeD0iOTIiIGN5PSI1MCIgcj0iMy41IiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjYiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIzIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjUiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSI4MCIgY3k9IjIwIiByPSIzIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjUiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjgwIiByPSIzIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjUiIC8+CiAgICAgICAgICA8Y2lyY2xlIGN4PSI4MCIgY3k9IjgwIiByPSIzIiBmaWxsPSIjOEI0NTU3IiBvcGFjaXR5PSIwLjUiIC8+CiAgICAgICAgPC9nPgogICAgICAgIDwhLS0gU21hbGwgbGVhdmVzIC0tPgogICAgICAgIDxnIGZpbGw9IiM4QjQ1NTciIG9wYWNpdHk9IjAuMyI+CiAgICAgICAgICA8ZWxsaXBzZSBjeD0iMzUiIGN5PSIxMCIgcng9IjQiIHJ5PSIxLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAzNSAxMCkiIC8+CiAgICAgICAgICA8ZWxsaXBzZSBjeD0iNjUiIGN5PSIxMCIgcng9IjQiIHJ5PSIxLjUiIHRyYW5zZm9ybT0icm90YXRlKDMwIDY1IDEwKSIgLz4KICAgICAgICAgIDxlbGxpcHNlIGN4PSIxMCIgY3k9IjM1IiByeD0iNCIgcnk9IjEuNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTYwIDEwIDM1KSIgLz4KICAgICAgICAgIDxlbGxpcHNlIGN4PSI5MCIgY3k9IjM1IiByeD0iNCIgcnk9IjEuNSIgdHJhbnNmb3JtPSJyb3RhdGUoNjAgOTAgMzUpIiAvPgogICAgICAgICAgPGVsbGlwc2UgY3g9IjEwIiBjeT0iNjUiIHJ4PSI0IiByeT0iMS41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIwIDEwIDY1KSIgLz4KICAgICAgICAgIDxlbGxpcHNlIGN4PSI5MCIgY3k9IjY1IiByeD0iNCIgcnk9IjEuNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDkwIDY1KSIgLz4KICAgICAgICAgIDxlbGxpcHNlIGN4PSIzNSIgY3k9IjkwIiByeD0iNCIgcnk9IjEuNSIgdHJhbnNmb3JtPSJyb3RhdGUoMzAgMzUgOTApIiAvPgogICAgICAgICAgPGVsbGlwc2UgY3g9IjY1IiBjeT0iOTAiIHJ4PSI0IiByeT0iMS41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzAgNjUgOTApIiAvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogIDxnIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWYiIGZvbnQtd2VpZ2h0PSI0MDAiPgogICAgPHRleHQgeD0iMzgiIHk9IjQ4IiBmaWxsPSIjRDRBNTc0IiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCI+UjwvdGV4dD4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwwKSBzY2FsZSgtMSwxKSI+CiAgICAgIDx0ZXh0IHg9IjM4IiB5PSI0OCIgZmlsbD0iI0Q0QTU3NCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPlI8L3RleHQ+CiAgICA8L2c+CiAgICA8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IiM4QjQ1NTciIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIj4mIzEwMDg1OzwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=" alt="Roudi & Rayane" class="amelia-request-logo">
+                            
+                                                            <p class="font-serif text-lg md:text-xl text-foreground italic amelia-request-quote">
+                                    I have found the one whom my soul loves.
+                                </p>
+                            
+                                                            <div class="amelia-request-families">
+                                                                            <p class="font-serif text-base text-muted-foreground amelia-request-family">Mr. &amp; Mrs.
+Bitar</p>
+                                                                                                                <p class="font-serif text-base text-muted-foreground amelia-request-family">Mr. &amp; Mrs.
+Khoury</p>
+                                                                    </div>
+                            
+                                                            <p class="font-serif text-xl md:text-2xl text-foreground amelia-request-line">
+                                    Kindly join us as we unite in marriage.
+                                </p>
+                            
+                            
+                            <p class="amelia-request-names">
+                                Roudi &amp; Rayane
+                            </p>
+
+                                                            <div class="amelia-request-date-block">
+                                    <p class="amelia-request-date">
+                                        Sunday, August 23, 2026
+                                    </p>
+                                    <p class="amelia-request-time">
+                                        5:30 pm
+                                    </p>
+                                </div>
+                                                    </div>
+                    </div>
+                </section>
+            
+            
+                                            <section class="py-20 px-4 bg-wedding-ivory/50">
+                    <div class="max-w-md mx-auto text-center">
+                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4"
+                            style="opacity: 1; transform: translateY(0px)">
+                            Save the Date
+                        </h2>
+                        <div class="section-divider mb-12" style="transform: scaleX(1)"></div>
+                        <div class="bg-card rounded-2xl shadow-xl border border-wedding-blush/20 p-6 md:p-8"
+                            style="opacity: 1; transform: translateY(0px)">
+                            <div class="font-serif text-2xl md:text-3xl text-foreground mb-6">
+                                August 2026
+                            </div>
+                            <div class="grid grid-cols-7 gap-1 mb-2">
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Sun
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Mon
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Tue
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Wed
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Thu
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Fri
+                                    </div>
+                                                                    <div
+                                        class="font-sans text-xs text-muted-foreground uppercase tracking-wider py-2">
+                                        Sat
+                                    </div>
+                                                            </div>
+                            <div class="grid grid-cols-7 gap-1">
+                                
+                                                                    <div class="aspect-square"></div>
+                                                                    <div class="aspect-square"></div>
+                                                                    <div class="aspect-square"></div>
+                                                                    <div class="aspect-square"></div>
+                                                                    <div class="aspect-square"></div>
+                                                                    <div class="aspect-square"></div>
+
+
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">1</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">2</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">3</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">4</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">5</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">6</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">7</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">8</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">9</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">10</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">11</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">12</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">13</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">14</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">15</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">16</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">17</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">18</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">19</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">20</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">21</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">22</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-wedding-rose font-semibold"
+                                                style="transform: scale(1)">
+                                                <div class="absolute inset-0 flex items-center justify-center"
+                                                    style="transform: scale(1) rotate(0deg);">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-heart w-10 h-10 md:w-12 md:h-12 text-wedding-rose">
+                                                        <path
+                                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <span class="relative z-10">23</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">24</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">25</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">26</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">27</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">28</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">29</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">30</span>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="aspect-square flex items-center justify-center relative">
+                                                                                    <div
+                                                class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-serif text-sm md:text-base relative text-foreground/70">
+                                                <span class="relative z-10">31</span>
+                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            
+                                            <section class="py-20 px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4 text-center">
+                            Meeting Point
+                        </h2>
+                        <div class="section-divider mb-16"></div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                                                            <div class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20 text-center">
+                                    <p class="font-sans text-xs uppercase tracking-wider text-wedding-gold mb-2">
+                                        Groom
+                                    </p>
+                                    <h3 class="font-serif text-xl text-foreground mb-3">Roudi</h3>
+                                                                            <p class="font-sans text-sm text-muted-foreground mb-3">Bsalim, ABC Building 3rd Floor</p>
+                                                                                                        </div>
+                                                                                        <div class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20 text-center">
+                                    <p class="font-sans text-xs uppercase tracking-wider text-wedding-gold mb-2">
+                                        Bride
+                                    </p>
+                                    <h3 class="font-serif text-xl text-foreground mb-3">Rayane</h3>
+                                                                            <p class="font-sans text-sm text-muted-foreground mb-3">Zalka, ABC Building 4th Floor</p>
+                                                                                                        </div>
+                                                    </div>
+                    </div>
+                </section>
+            
+
+            
+            <section class="py-20 px-4 bg-wedding-ivory/50">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4 text-center"
+                        style="opacity: 1; transform: translateY(0px)">
+                        Wedding Day Timeline
+                    </h2>
+                    <div class="section-divider mb-16" style="transform: scaleX(1)"></div>
+                    <div class="relative">
+                        <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-wedding-blush/50"
+                            style="transform: scaleY(1); transform-origin: 50% 0% 0px;"></div>
+
+                        
+                                                    <div class="relative flex items-center gap-6 mb-12 last:mb-0 md:flex-row"
+                                style="opacity: 1; transform: translateX(0px);">
+                                <div
+                                    class="absolute left-8 md:left-1/2 w-4 h-4 -ml-2 bg-wedding-rose rounded-full border-4 border-background z-10">
+                                </div>
+                                <div class="amelia-timeline-card-shell ml-16 md:ml-0 md:w-[calc(50%-2rem)] md:pr-8 md:text-right">
+                                    <div
+                                        class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20">
+                                        <div class="flex items-center gap-3 mb-3 md:flex-row-reverse">
+                                            <div
+                                                class="w-10 h-10 rounded-full bg-wedding-blush/30 flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-church w-5 h-5 text-wedding-rose">
+                                                    <path d="M10 9h4"></path>
+                                                    <path d="M12 7v5"></path>
+                                                    <path d="M14 22v-4a2 2 0 0 0-4 0v4"></path>
+                                                    <path
+                                                        d="M18 22V5.618a1 1 0 0 0-.553-.894l-4.553-2.277a2 2 0 0 0-1.788 0L6.553 4.724A1 1 0 0 0 6 5.618V22">
+                                                    </path>
+                                                    <path
+                                                        d="m18 7 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.618a1 1 0 0 1 .553-.894L6 7">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                                                                            <span
+                                                    class="font-sans text-sm font-medium text-wedding-gold tracking-wider">5:00 PM</span>
+                                                                                    </div>
+                                        <h3 class="font-serif text-xl text-foreground mb-1">
+                                            Wedding Ceremony
+                                        </h3>
+                                        <p class="font-sans text-sm text-muted-foreground">
+                                            La Citadel Venue, Barouk
+                                        </p>
+                                                                                    <a href="https://maps.app.goo.gl/DMzX6E4V9z6dsGH5A?g_st=aw" target="_blank" rel="noopener noreferrer"
+                                                class="amelia-timeline-directions">
+                                                <i class="fas fa-location-arrow"></i>
+                                                <span>Directions</span>
+                                            </a>
+                                                                            </div>
+                                </div>
+                                <div class="hidden md:block md:w-[calc(50%-2rem)]"></div>
+                            </div>
+                        
+                        
+                            <div id="celebration-mount"></div>
+                            <script>(function(){var w=window.__wedding;if(w&&w.eventLevel==='full'){var b='PGRpdiBpZD0iY2VsZWJyYXRpb24tZW50cnkiIGNsYXNzPSJyZWxhdGl2ZSBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNiBtYi0xMiBsYXN0Om1iLTAgbWQ6ZmxleC1yb3ctcmV2ZXJzZSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zZm9ybTogdHJhbnNsYXRlWCgwcHgpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgbGVmdC04IG1kOmxlZnQtMS8yIHctNCBoLTQgLW1sLTIgYmctd2VkZGluZy1yb3NlIHJvdW5kZWQtZnVsbCBib3JkZXItNCBib3JkZXItYmFja2dyb3VuZCB6LTEwIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhbWVsaWEtdGltZWxpbmUtY2FyZC1zaGVsbCBtbC0xNiBtZDptbC0wIG1kOnctW2NhbGMoNTAlLTJyZW0pXSBtZDpwbC04IG1kOnRleHQtbGVmdCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLWNhcmQgcm91bmRlZC14bCBwLTYgc2hhZG93LWxnIGJvcmRlciBib3JkZXItd2VkZGluZy1ibHVzaC8yMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBtYi0zICI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMCBoLTEwIHJvdW5kZWQtZnVsbCBiZy13ZWRkaW5nLWJsdXNoLzMwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW11c2ljIHctNSBoLTUgdGV4dC13ZWRkaW5nLXJvc2UiPjxwYXRoIGQ9Ik05IDE4VjVsMTItMnYxMyI+PC9wYXRoPjxjaXJjbGUgY3g9IjYiIGN5PSIxOCIgcj0iMyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgiIGN5PSIxNiIgcj0iMyI+PC9jaXJjbGU+PC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZvbnQtc2FucyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtd2VkZGluZy1nb2xkIHRyYWNraW5nLXdpZGVyIj44OjMwIFBNPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9ImZvbnQtc2VyaWYgdGV4dC14bCB0ZXh0LWZvcmVncm91bmQgbWItMSI+VGhlIENlbGVicmF0aW9uPC9oMz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJmb250LXNhbnMgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPkxhIENpdGFkZWwgVmVudWUsIEJhcm91azwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsL0RNelg2RTRWOXo2ZHNHSDVBP2dfc3Q9YXciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIGNsYXNzPSJhbWVsaWEtdGltZWxpbmUtZGlyZWN0aW9ucyI+PGkgY2xhc3M9ImZhcyBmYS1sb2NhdGlvbi1hcnJvdyI+PC9pPjxzcGFuPkRpcmVjdGlvbnM8L3NwYW4+PC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJoaWRkZW4gbWQ6YmxvY2sgbWQ6dy1bY2FsYyg1MCUtMnJlbSldIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=';document.getElementById('celebration-mount').outerHTML=atob(b);}})();</script>
+                                            </div>
+                </div>
+            </section>
+
+            
+                                        <section class="py-20 px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4 text-center"
+                            style="opacity: 1; transform: translateY(0px)">
+                            Gift Registry
+                        </h2>
+                        <div class="section-divider mb-8" style="transform: scaleX(1)"></div>
+                                                    <p class="text-center font-serif text-lg text-muted-foreground mb-12 max-w-xl mx-auto"
+                                style="opacity: 1">
+                                Your love, laughter and presence are all we could wish for on our special day. For those who wish, a wedding list is available
+                            </p>
+                                                                            <div class="max-w-md mx-auto">
+                                                                                                            <div class="bg-card rounded-2xl p-8 shadow-lg border border-wedding-blush/20"
+                                            style="opacity: 1; transform: translateX(0px);">
+                                            <div class="flex items-center justify-between mb-6">
+                                                <div class="flex items-center gap-3">
+                                                    <div
+                                                        class="w-10 h-10 rounded-full bg-wedding-blush/30 flex items-center justify-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                            height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-credit-card w-5 h-5 text-wedding-rose">
+                                                            <rect width="20" height="14" x="2" y="5"
+                                                                rx="2"></rect>
+                                                            <line x1="2" x2="22" y1="10"
+                                                                y2="10"></line>
+                                                        </svg>
+                                                    </div>
+                                                    <h3 class="font-serif text-xl text-foreground">
+                                                        Whish
+                                                    </h3>
+                                                </div>
+                                                                                                    <button
+                                                        class="p-2 rounded-lg hover:bg-muted transition-colors duration-300"
+                                                        title="Copy details"
+                                                        onclick="navigator.clipboard.writeText('#123456')">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                            height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-copy w-5 h-5 text-muted-foreground">
+                                                            <rect width="14" height="14" x="8" y="8"
+                                                                rx="2" ry="2"></rect>
+                                                            <path
+                                                                d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                                                            </div>
+                                                                                            <div class="space-y-4 p-4 rounded-xl bg-muted/50">
+                                                    <div>
+                                                        <span
+                                                            class="block font-sans text-xs text-muted-foreground uppercase tracking-wider mb-1">Whish</span>
+                                                        <span
+                                                            class="font-mono text-foreground">#123456</span>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                                                                                </div>
+                                            </div>
+                </section>
+            
+            
+                                                <section class="py-20 px-4 bg-wedding-ivory/50">
+                        <div class="max-w-xl mx-auto text-center">
+                            <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4"
+                                style="opacity: 1; transform: translateY(0px)">
+                                Be Our Guest
+                            </h2>
+                            <div class="section-divider mb-8" style="transform: scaleX(1)"></div>
+
+                                                            <div class="font-serif text-base text-muted-foreground mb-2 italic"
+                                    style="">
+                                    <span>Please reply before:</span>
+                                    <p class="text-foreground font-semibold mt-1">
+                                                                                    August 10, 2026
+                                                                            </p>
+                                    <p class="mt-2" style="">
+                                        <span>Number of persons:</span>
+                                        <span id="rsvp-seats-max-text">1</span>
+                                    </p>
+                                </div>
+                            
+                            <div class="rsvp-attendee-card bg-card rounded-2xl shadow-lg border border-wedding-blush/20 p-6 md:p-8 mt-8"
+                                style="opacity: 1; transform: translateY(0px)">
+
+                                                                    
+                                    <form id="rsvp-form" name="rsvp" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                        <input type="hidden" name="form-name" value="rsvp">
+                                        <p style="display:none"><label>Leave this empty: <input name="bot-field"></label></p>
+                                        <input type="hidden" name="seats_max" id="field-seats-max" value="">
+                                        <input type="hidden" name="event_level" id="field-event-level" value="">
+
+                                        <div class="mb-6">
+                                            <label class="font-serif text-base text-foreground mb-4 block" style="">
+                                                Are you attending?
+                                            </label>
+                                            <div class="flex justify-center gap-4">
+                                                <button type="button"
+                                                    class="rsvp-btn rsvp-accept flex items-center gap-2 px-3 py-2 rounded-xl border-2 border-muted-foreground/30 text-muted-foreground font-serif text-xs transition-all duration-300"
+                                                    data-value="yes">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                                                    <span>Joyfully Accept</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="rsvp-btn rsvp-decline flex items-center gap-2 px-3 py-2 rounded-xl border-2 border-muted-foreground/30 text-muted-foreground font-serif text-xs transition-all duration-300"
+                                                    data-value="no">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                                                    <span>Regretfully Decline</span>
+                                                </button>
+                                            </div>
+                                            <input type="hidden" id="attending" name="attending" value="">
+                                            <p class="rsvp-invalid-feedback text-red-500 text-sm mt-2" style="display:none">
+                                                Please select an option.
+                                            </p>
+                                        </div>
+
+                                        <div id="seats-section" class="mb-6" style="display:none">
+                                            <label class="font-serif text-sm text-muted-foreground mb-2 block" style="">
+                                                How many guests will be attending?
+                                            </label>
+                                            <select name="seats_taken" id="seats-taken-select"
+                                                class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30">
+                                                <option value="">Select number of guests...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <p id="seats-invalid" class="text-red-500 text-sm mt-2" style="display:none">
+                                                Please select the number of guests.
+                                            </p>
+                                        </div>
+
+                                        <div id="names-section" class="mb-6 px-2" style="display:none">
+                                            <label class="font-serif text-sm text-muted-foreground mb-2 block" style="">
+                                                Name(s) of guest(s) attending:
+                                            </label>
+                                            <div class="space-y-3">
+                                                <div id="attendee-1-wrap" class="px-2">
+                                                    <input type="text" name="attendee_1" id="attendee-1"
+                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
+                                                        placeholder="Guest 1 name">
+                                                </div>
+                                                <div id="attendee-2-wrap" class="px-2" style="display:none">
+                                                    <input type="text" name="attendee_2" id="attendee-2"
+                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
+                                                        placeholder="Guest 2 name">
+                                                </div>
+                                                <div id="attendee-3-wrap" class="px-2" style="display:none">
+                                                    <input type="text" name="attendee_3" id="attendee-3"
+                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
+                                                        placeholder="Guest 3 name">
+                                                </div>
+                                            </div>
+                                            <p id="names-invalid" class="text-red-500 text-sm mt-2" style="display:none">
+                                                Please enter a name for each guest.
+                                            </p>
+                                        </div>
+
+                                        <button type="submit"
+                                            class="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-wedding-rose text-white font-serif text-sm tracking-wider uppercase hover:bg-wedding-rose/90 transition-colors duration-300">
+                                            Submit RSVP
+                                        </button>
+                                    </form>
+
+                                    <p id="submission-message" class="mt-6 font-serif text-wedding-rose text-lg" style="display: none">
+                                        Submitted successfully
+                                    </p>
+                                                            </div>
+                        </div>
+                    </section>
+                            
+            
+            <footer class="py-16 px-4 text-center">
+                <div style="opacity: 1; transform: translateY(0px)">
+                    <p class="font-script text-3xl md:text-4xl text-wedding-bronze mb-6">
+                        Roudi &amp; Rayane
+                    </p>
+                    <div class="flex items-center justify-center gap-3 mb-8">
+                        <div class="h-px w-12 bg-wedding-blush"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-heart w-5 h-5 text-wedding-rose fill-wedding-blush">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg>
+                        <div class="h-px w-12 bg-wedding-blush"></div>
+                    </div>
+                                            <p class="font-serif text-muted-foreground italic mb-2">
+                            ♡ Happily ever after ♡
+                        </p>
+                                    </div>
+            </footer>
+        </main>
+        <div class="prompt_swipeUp" aria-hidden="true">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M8.2 2.5A4.2 4.2 0 005 7.4c.2.9.7 1.8 1.3 2.4a.5.5 0 10.6-.7c-.4-.4-.8-1.2-1-1.9A3.2 3.2 0 1112.2 6c.2.7 0 1.5-.2 2.1a.5.5 0 10.9.4c.3-.8.4-1.8.2-2.7a4.2 4.2 0 00-4.9-3.3zM9 5.7c-.8.1-1.3.9-1.1 1.6l1.6 8.2L8 14c-1-1.2-1.7-1-2.2-.5-.6.6-.8 1-.1 2.1 1.5 2.4 3.7 5 5.8 6.7l6.2-1.2c1.8-2 2-10-1-9.7-.3 0-.7.1-.9.4-.1-1-1-1-1.3-1-.4.1-.7.4-.8.9-.2-1-1-1-1.4-1-.4.2-.9.5-1 1l-.9-4.8c-.2-.8-.9-1.3-1.6-1.1z"
+            fill="white" fill-rule="nonzero" />
+    </svg>
+    <span class="prompt_label">Swipe to continue</span>
+    <div class="promptMask"></div>
+</div>
+
+<style>
+    .prompt_swipeUp {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 9998;
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.25s ease;
+    }
+
+    .prompt_swipeUp.isVisible {
+        opacity: 1;
+    }
+
+    .prompt_swipeUp .prompt_label {
+        position: relative;
+        z-index: 10;
+        display: block;
+        width: 170px;
+        padding: 0 15px 14px;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        text-shadow: 0 0 12px #000000;
+    }
+
+    .prompt_swipeUp svg {
+        position: relative;
+        z-index: 10;
+        display: block;
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(-75px);
+        transform-origin: 50% 50%;
+        animation: swipeup 2.1s infinite ease;
+    }
+
+    .prompt_swipeUp svg path {
+        fill: #ffffff;
+    }
+
+    .prompt_swipeUp .promptMask {
+        position: absolute;
+        top: -95px;
+        z-index: 5;
+        width: 100%;
+        height: 200px;
+        background: #000000;
+        filter: blur(75px);
+        opacity: 0.7;
+    }
+
+    @keyframes swipeup {
+        0%,
+        10%,
+        20% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translateY(-75px);
+        }
+
+        90%,
+        100% {
+            opacity: 0;
+            transform: translateY(-75px);
+        }
+    }
+</style>
+
+<script>
+    (function() {
+        if (window.__scrollDownPromptBound) return;
+        window.__scrollDownPromptBound = true;
+
+        var promptTimer = null;
+        var hideTimer = null;
+
+        function getPrompt() {
+            return document.querySelector('.prompt_swipeUp');
+        }
+
+        function getScrollTop() {
+            return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        }
+
+        function isEnvelopeBlocking() {
+            var envelope = document.getElementById('envelope-overlay');
+            if (!envelope) return false;
+
+            var style = window.getComputedStyle(envelope);
+            return style.display !== 'none' && !envelope.classList.contains('hidden') && Number(style.opacity) !== 0;
+        }
+
+        function HideSwipeUp() {
+            var prompt = getPrompt();
+            if (!prompt) return;
+
+            clearTimeout(hideTimer);
+            prompt.classList.remove('isVisible');
+            prompt.setAttribute('aria-hidden', 'true');
+            hideTimer = setTimeout(function() {
+                if (!prompt.classList.contains('isVisible')) {
+                    prompt.style.display = 'none';
+                }
+            }, 250);
+        }
+
+        function ShowSwipeUp() {
+            var prompt = getPrompt();
+            if (!prompt || getScrollTop() > 99 || isEnvelopeBlocking()) return;
+
+            clearTimeout(hideTimer);
+            prompt.style.display = 'block';
+            prompt.setAttribute('aria-hidden', 'false');
+            requestAnimationFrame(function() {
+                prompt.classList.add('isVisible');
+            });
+            hideTimer = setTimeout(HideSwipeUp, 6300);
+        }
+
+        function RunSwipeUpHelper() {
+            HideSwipeUp();
+            clearInterval(promptTimer);
+
+            var counter = 0;
+            promptTimer = setInterval(function() {
+                counter++;
+                if (counter % 2 !== 0) {
+                    if (getScrollTop() < 100 && !isEnvelopeBlocking()) {
+                        ShowSwipeUp();
+                    } else if (getScrollTop() > 99) {
+                        HideSwipeUp();
+                        clearInterval(promptTimer);
+                    }
+                }
+            }, 6300);
+        }
+
+        window.ShowSwipeUp = ShowSwipeUp;
+        window.HideSwipeUp = HideSwipeUp;
+        window.RunSwipeUpHelper = RunSwipeUpHelper;
+
+        function initScrollPrompt() {
+            if (!getPrompt()) return;
+
+            RunSwipeUpHelper();
+
+            window.addEventListener('scroll', function() {
+                if (getScrollTop() > 99) {
+                    HideSwipeUp();
+                    clearInterval(promptTimer);
+                }
+            }, { passive: true });
+
+            var envelope = document.getElementById('envelope-overlay');
+            if (envelope) {
+                new MutationObserver(function() {
+                    if (!isEnvelopeBlocking() && getScrollTop() < 100) {
+                        RunSwipeUpHelper();
+                    }
+                }).observe(envelope, { attributes: true, attributeFilter: ['class', 'style'] });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollPrompt);
+        } else {
+            initScrollPrompt();
+        }
+    })();
+</script>
+    </div>
+
+    
+    <script>
+        (function() {
+            document.addEventListener('DOMContentLoaded', function() {
+                var revealTargets = document.querySelectorAll('main > section, main > footer');
+                if (!revealTargets.length) return;
+
+                var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                var isTouchOrMobile = window.matchMedia && window.matchMedia('(max-width: 1024px), (hover: none) and (pointer: coarse)').matches;
+                var revealStyles = ['fade-up', 'slide-left', 'slide-right', 'soft-zoom', 'rise'];
+
+                revealTargets.forEach(function(target, index) {
+                    target.setAttribute('data-scroll-reveal', '');
+                    target.setAttribute('data-reveal-style', revealStyles[index % revealStyles.length]);
+                    target.style.setProperty('--reveal-delay', isTouchOrMobile ? '0ms' : Math.min(index, 5) * 70 + 'ms');
+                });
+
+                if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+                    revealTargets.forEach(function(target) {
+                        target.classList.add('is-visible');
+                        target.style.willChange = 'auto';
+                    });
+                    return;
+                }
+
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        entry.target.style.willChange = 'auto';
+                        observer.unobserve(entry.target);
+                    });
+                }, {
+                    threshold: isTouchOrMobile ? 0.1 : 0.18,
+                    rootMargin: '0px 0px -10% 0px'
+                });
+
+                revealTargets.forEach(function(target) {
+                    observer.observe(target);
+                });
+            });
+        })();
+    </script>
+
+    
+            <script>
+            (function() {
+                var countdown = document.getElementById('countdown');
+                if (!countdown) return;
+                var deadline = new Date(countdown.getAttribute('data-deadline')).getTime();
+
+                function update() {
+                    var now = new Date().getTime();
+                    var diff = deadline - now;
+                    if (diff < 0) diff = 0;
+                    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                    document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+                    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+                    document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+                    document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+                }
+                update();
+                setInterval(update, 1000);
+            })();
+        </script>
+    
+    
+            <script>
+            var bgMusic = document.getElementById('bg-music');
+            var musicPlaying = false;
+
+            function toggleMusic() {
+                if (musicPlaying) {
+                    bgMusic.pause();
+                } else {
+                    bgMusic.play().catch(function() {});
+                }
+            }
+
+            // Sync state from actual audio events (handles envelope-triggered playback too)
+            bgMusic.addEventListener('play', function() {
+                musicPlaying = true;
+                document.getElementById('music-icon-on').style.display = 'block';
+                document.getElementById('music-icon-off').style.display = 'none';
+            });
+            bgMusic.addEventListener('pause', function() {
+                musicPlaying = false;
+                document.getElementById('music-icon-on').style.display = 'none';
+                document.getElementById('music-icon-off').style.display = 'block';
+            });
+
+            // Try to play immediately on load; browsers that block unmuted
+            // autoplay will reject this, so fall back to the first interaction.
+            bgMusic.play().catch(function() {});
+
+            ['click', 'touchstart', 'keydown', 'scroll'].forEach(function(eventName) {
+                document.addEventListener(eventName, function() {
+                    if (!musicPlaying) {
+                        bgMusic.play().catch(function() {});
+                    }
+                }, { once: true, passive: true });
+            });
+                    </script>
+    
+    
+    <script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            var w = window.__wedding || { sMax: 1, eventLevel: 'ceremony_only' };
+            var sMax = w.sMax;
+            var eventLevel = w.eventLevel;
+
+            // Populate hidden context fields
+            var fMax = document.getElementById('field-seats-max');
+            if (fMax) fMax.value = sMax;
+            var fLevel = document.getElementById('field-event-level');
+            if (fLevel) fLevel.value = eventLevel;
+
+            // Update "Number of persons" label
+            var maxText = document.getElementById('rsvp-seats-max-text');
+            if (maxText) maxText.textContent = sMax;
+
+            // Trim select options beyond sMax
+            var sel = document.getElementById('seats-taken-select');
+            if (sel) {
+                Array.from(sel.options).forEach(function(opt) {
+                    if (parseInt(opt.value, 10) > sMax) sel.removeChild(opt);
+                });
+            }
+
+            function selectBtn(btn) { btn.classList.add('rsvp-btn-selected'); }
+            function deselectBtn(btn) { btn.classList.remove('rsvp-btn-selected'); }
+
+            var seatsSection = document.getElementById('seats-section');
+            var namesSection = document.getElementById('names-section');
+            var attendingField = document.getElementById('attending');
+
+            // Accept / Decline toggle
+            document.querySelectorAll('.rsvp-accept, .rsvp-decline').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var form = this.closest('form');
+                    form.querySelectorAll('.rsvp-accept, .rsvp-decline').forEach(deselectBtn);
+                    selectBtn(this);
+                    var val = this.dataset.value;
+                    if (attendingField) attendingField.value = val;
+                    var fb = form.querySelector('.rsvp-invalid-feedback');
+                    if (fb) fb.style.display = 'none';
+                    if (val === 'yes') {
+                        if (seatsSection) seatsSection.style.display = 'block';
+                    } else {
+                        if (seatsSection) seatsSection.style.display = 'none';
+                        if (namesSection) namesSection.style.display = 'none';
+                        if (sel) sel.value = '';
+                        ['attendee-1', 'attendee-2', 'attendee-3'].forEach(function(id) {
+                            var el = document.getElementById(id);
+                            if (el) { el.value = ''; el.required = false; }
+                        });
+                    }
+                });
+            });
+
+            // Seats count → show/hide name fields
+            if (sel) {
+                sel.addEventListener('change', function() {
+                    var n = parseInt(this.value, 10);
+                    var si = document.getElementById('seats-invalid');
+                    if (si) si.style.display = 'none';
+                    if (isNaN(n) || n < 1) {
+                        if (namesSection) namesSection.style.display = 'none';
+                        return;
+                    }
+                    if (namesSection) namesSection.style.display = 'block';
+                    for (var i = 1; i <= 3; i++) {
+                        var wrap = document.getElementById('attendee-' + i + '-wrap');
+                        var inp = document.getElementById('attendee-' + i);
+                        if (wrap) wrap.style.display = (i <= n) ? 'block' : 'none';
+                        if (inp) {
+                            inp.required = (i <= n);
+                            if (i > n) inp.value = '';
+                        }
+                    }
+                });
+            }
+
+            // Form submission via Netlify fetch
+            var form = document.getElementById('rsvp-form');
+            if (!form) return;
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var att = attendingField ? attendingField.value : '';
+                if (!att) {
+                    var fb = form.querySelector('.rsvp-invalid-feedback');
+                    if (fb) fb.style.display = 'block';
+                    return;
+                }
+
+                if (att === 'yes') {
+                    var seats = sel ? sel.value : '';
+                    if (!seats) {
+                        var si = document.getElementById('seats-invalid');
+                        if (si) si.style.display = 'block';
+                        return;
+                    }
+                    var n = parseInt(seats, 10);
+                    var allNamed = true;
+                    for (var i = 1; i <= n; i++) {
+                        var inp = document.getElementById('attendee-' + i);
+                        if (!inp || !inp.value.trim()) { allNamed = false; break; }
+                    }
+                    if (!allNamed) {
+                        var ni = document.getElementById('names-invalid');
+                        if (ni) ni.style.display = 'block';
+                        return;
+                    }
+                    var ni2 = document.getElementById('names-invalid');
+                    if (ni2) ni2.style.display = 'none';
+                }
+
+                var data = new URLSearchParams();
+                data.append('form-name', 'rsvp');
+                data.append('attending', att);
+                data.append('seats_max', sMax);
+                data.append('event_level', eventLevel);
+                if (att === 'yes' && sel && sel.value) {
+                    data.append('seats_taken', sel.value);
+                    for (var j = 1; j <= parseInt(sel.value, 10); j++) {
+                        var nameEl = document.getElementById('attendee-' + j);
+                        if (nameEl) data.append('attendee_' + j, nameEl.value.trim());
+                    }
+                }
+
+                fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: data.toString()
+                })
+                .then(function(r) {
+                    if (!r.ok) throw new Error('Network response was not ok');
+                    form.style.display = 'none';
+                    var msg = document.getElementById('submission-message');
+                    if (msg) msg.style.display = 'block';
+                })
+                .catch(function() {
+                    alert('An error occurred. Please try again.');
+                });
+            });
+        });
+    })();
+    </script>
+    </div>
+
+    <div class="deskBG_mobonly" style="background-color: #000000">
+        <div class="deskBG_mobonly_wrapper"
+            style="background-image: none /* TODO: place a background image in images/ and update this */">
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/leaves.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
