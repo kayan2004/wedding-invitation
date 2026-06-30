@@ -153,8 +153,8 @@
         }
 
         .hero-cake-wrap {
-            width: 22rem;
-            height: 22rem;
+            width: min(22rem, calc(100vw - 3rem));
+            height: min(22rem, calc(100vw - 3rem));
         }
 
         /* ---- Hero photo frame (replaces the 3D cake) ---- */
@@ -165,12 +165,10 @@
             border-radius: 50%;
             overflow: hidden;
             background: linear-gradient(145deg, hsl(var(--wedding-blush) / 0.55), hsl(var(--wedding-ivory)));
-            border: 7px solid hsl(var(--wedding-ivory));
-            outline: 1px solid hsl(var(--wedding-gold) / 0.5);
-            outline-offset: 7px;
             box-shadow:
                 0 34px 60px -18px hsl(var(--wedding-rose) / 0.4),
-                inset 0 0 0 1px hsl(var(--wedding-gold) / 0.35);
+                0 0 0 3px hsl(var(--wedding-gold) / 0.45),
+                inset 0 0 0 1px hsl(var(--wedding-gold) / 0.2);
         }
 
         .hero-photo-frame img {
@@ -338,8 +336,8 @@
 
         @media (min-width: 1024px) {
             .hero-cake-wrap {
-                width: 30rem;
-                height: 30rem;
+                width: min(30rem, calc(100vw - 6rem));
+                height: min(30rem, calc(100vw - 6rem));
             }
 
             .amelia-hero-name {
@@ -457,12 +455,9 @@
     <div id="main" class="" data-language="en">
     <script>
     (function(){
-        var p=new URLSearchParams(window.location.search);
-        var s=p.get('s');
-        var sMax=['1','2','3'].includes(s)?parseInt(s,10):1;
-        var EVENT_CODES={'a7f3':'full'};
-        var eventLevel=EVENT_CODES[p.get('k')]||'ceremony_only';
-        window.__wedding={sMax:sMax,eventLevel:eventLevel};
+        var s=new URLSearchParams(window.location.search).get('s');
+        var isFull=['1','2','3'].includes(s);
+        window.__wedding={sMax:isFull?parseInt(s,10):1,eventLevel:isFull?'full':'ceremony_only'};
     })();
     </script>
 
@@ -518,7 +513,7 @@
                         Rayane
                     </h1>
                 </div>
-                <p class="font-serif text-lg md:text-xl tracking-[0.3em] text-foreground/70 uppercase mb-12 relative z-10"
+                <p class="font-serif text-lg md:text-xl tracking-[0.3em] text-foreground/70 uppercase mb-8 relative z-10"
                     style="opacity: 1">
                                             August 23, 2026
                                     </p>
@@ -541,7 +536,7 @@
                         <div class="w-full h-full rounded-full bg-wedding-blush"></div>
                     </div>
                 </div>
-                <div class="section-divider mt-16" style="transform: none"></div>
+                <div class="section-divider mt-10" style="transform: none"></div>
             </section>
 
             
@@ -612,12 +607,6 @@
                                     I have found the one whom my soul loves.
                                 </p>
                             
-                                                            <div class="amelia-request-families">
-                                                                            <p class="font-serif text-base text-muted-foreground amelia-request-family">Mr. &amp; Mrs.
-Bitar</p>
-                                                                                                                <p class="font-serif text-base text-muted-foreground amelia-request-family">Mr. &amp; Mrs.
-Khoury</p>
-                                                                    </div>
                             
                                                             <p class="font-serif text-xl md:text-2xl text-foreground amelia-request-line">
                                     Kindly join us as we unite in marriage.
@@ -633,7 +622,7 @@ Khoury</p>
                                         Sunday, August 23, 2026
                                     </p>
                                     <p class="amelia-request-time">
-                                        5:30 pm
+                                        5:00 pm
                                     </p>
                                 </div>
                                                     </div>
@@ -898,30 +887,6 @@ Khoury</p>
             
 
             
-                                            <section class="py-20 px-4">
-                    <div class="max-w-4xl mx-auto">
-                        <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4 text-center">
-                            Meeting Point
-                        </h2>
-                        <div class="section-divider mb-16"></div>
-                        <div class="grid md:grid-cols-2 gap-8">
-                                                            <div class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20 text-center">
-                                    <p class="font-sans text-xs uppercase tracking-wider text-wedding-gold mb-2">
-                                        Groom
-                                    </p>
-                                    <h3 class="font-serif text-xl text-foreground mb-3">Roudi</h3>
-                                                                            <p class="font-sans text-sm text-muted-foreground mb-3">Bsalim, ABC Building 3rd Floor</p>
-                                                                                                        </div>
-                                                                                        <div class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20 text-center">
-                                    <p class="font-sans text-xs uppercase tracking-wider text-wedding-gold mb-2">
-                                        Bride
-                                    </p>
-                                    <h3 class="font-serif text-xl text-foreground mb-3">Rayane</h3>
-                                                                            <p class="font-sans text-sm text-muted-foreground mb-3">Zalka, ABC Building 4th Floor</p>
-                                                                                                        </div>
-                                                    </div>
-                    </div>
-                </section>
             
 
             
@@ -982,10 +947,29 @@ Khoury</p>
                                 </div>
                                 <div class="hidden md:block md:w-[calc(50%-2rem)]"></div>
                             </div>
-                        
-                        
+
+
+                                <div id="altahani-entry" class="relative flex items-center gap-6 mb-12 last:mb-0 md:flex-row-reverse"
+                                style="opacity: 1; transform: translateX(0px);">
+                                <div class="absolute left-8 md:left-1/2 w-4 h-4 -ml-2 bg-wedding-rose rounded-full border-4 border-background z-10"></div>
+                                <div class="amelia-timeline-card-shell ml-16 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:text-left">
+                                    <div class="bg-card rounded-xl p-6 shadow-lg border border-wedding-blush/20">
+                                        <div class="flex items-center gap-3 mb-3 ">
+                                            <div class="w-10 h-10 rounded-full bg-wedding-blush/30 flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 text-wedding-rose"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                            </div>
+                                            <span class="font-sans text-sm font-medium text-wedding-gold tracking-wider">6:00 PM – 7:30 PM</span>
+                                        </div>
+                                        <h3 class="font-serif text-xl text-foreground mb-1">Al Tahani</h3>
+                                        <p class="font-sans text-sm text-muted-foreground">La Citadel Venue, Barouk</p>
+                                        <a href="https://maps.app.goo.gl/DMzX6E4V9z6dsGH5A?g_st=aw" target="_blank" rel="noopener noreferrer" class="amelia-timeline-directions"><i class="fas fa-location-arrow"></i><span>Directions</span></a>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block md:w-[calc(50%-2rem)]"></div>
+                            </div>
+
                             <div id="celebration-mount"></div>
-                            <script>(function(){var w=window.__wedding;if(w&&w.eventLevel==='full'){var b='PGRpdiBpZD0iY2VsZWJyYXRpb24tZW50cnkiIGNsYXNzPSJyZWxhdGl2ZSBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNiBtYi0xMiBsYXN0Om1iLTAgbWQ6ZmxleC1yb3ctcmV2ZXJzZSIgc3R5bGU9Im9wYWNpdHk6IDE7IHRyYW5zZm9ybTogdHJhbnNsYXRlWCgwcHgpOyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWJzb2x1dGUgbGVmdC04IG1kOmxlZnQtMS8yIHctNCBoLTQgLW1sLTIgYmctd2VkZGluZy1yb3NlIHJvdW5kZWQtZnVsbCBib3JkZXItNCBib3JkZXItYmFja2dyb3VuZCB6LTEwIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhbWVsaWEtdGltZWxpbmUtY2FyZC1zaGVsbCBtbC0xNiBtZDptbC0wIG1kOnctW2NhbGMoNTAlLTJyZW0pXSBtZDpwbC04IG1kOnRleHQtbGVmdCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImJnLWNhcmQgcm91bmRlZC14bCBwLTYgc2hhZG93LWxnIGJvcmRlciBib3JkZXItd2VkZGluZy1ibHVzaC8yMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBtYi0zICI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMCBoLTEwIHJvdW5kZWQtZnVsbCBiZy13ZWRkaW5nLWJsdXNoLzMwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW11c2ljIHctNSBoLTUgdGV4dC13ZWRkaW5nLXJvc2UiPjxwYXRoIGQ9Ik05IDE4VjVsMTItMnYxMyI+PC9wYXRoPjxjaXJjbGUgY3g9IjYiIGN5PSIxOCIgcj0iMyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgiIGN5PSIxNiIgcj0iMyI+PC9jaXJjbGU+PC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZvbnQtc2FucyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtd2VkZGluZy1nb2xkIHRyYWNraW5nLXdpZGVyIj44OjMwIFBNPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9ImZvbnQtc2VyaWYgdGV4dC14bCB0ZXh0LWZvcmVncm91bmQgbWItMSI+VGhlIENlbGVicmF0aW9uPC9oMz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJmb250LXNhbnMgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPkxhIENpdGFkZWwgVmVudWUsIEJhcm91azwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsL0RNelg2RTRWOXo2ZHNHSDVBP2dfc3Q9YXciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIGNsYXNzPSJhbWVsaWEtdGltZWxpbmUtZGlyZWN0aW9ucyI+PGkgY2xhc3M9ImZhcyBmYS1sb2NhdGlvbi1hcnJvdyI+PC9pPjxzcGFuPkRpcmVjdGlvbnM8L3NwYW4+PC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJoaWRkZW4gbWQ6YmxvY2sgbWQ6dy1bY2FsYyg1MCUtMnJlbSldIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=';document.getElementById('celebration-mount').outerHTML=atob(b);}})();</script>
+                            <script>(function(){var w=window.__wedding;if(w&&w.eventLevel==='full'){var b='PGRpdiBpZD0iY2VsZWJyYXRpb24tZW50cnkiIGNsYXNzPSJyZWxhdGl2ZSBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNiBtYi0xMiBsYXN0Om1iLTAgbWQ6ZmxleC1yb3ciIHN0eWxlPSJvcGFjaXR5OiAxOyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMHB4KTsiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFic29sdXRlIGxlZnQtOCBtZDpsZWZ0LTEvMiB3LTQgaC00IC1tbC0yIGJnLXdlZGRpbmctcm9zZSByb3VuZGVkLWZ1bGwgYm9yZGVyLTQgYm9yZGVyLWJhY2tncm91bmQgei0xMCI+PC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYW1lbGlhLXRpbWVsaW5lLWNhcmQtc2hlbGwgbWwtMTYgbWQ6bWwtMCBtZDp3LVtjYWxjKDUwJS0ycmVtKV0gbWQ6cHItOCBtZDp0ZXh0LXJpZ2h0Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYmctY2FyZCByb3VuZGVkLXhsIHAtNiBzaGFkb3ctbGcgYm9yZGVyIGJvcmRlci13ZWRkaW5nLWJsdXNoLzIwIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIG1iLTMgbWQ6ZmxleC1yb3ctcmV2ZXJzZSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idy0xMCBoLTEwIHJvdW5kZWQtZnVsbCBiZy13ZWRkaW5nLWJsdXNoLzMwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW11c2ljIHctNSBoLTUgdGV4dC13ZWRkaW5nLXJvc2UiPjxwYXRoIGQ9Ik05IDE4VjVsMTItMnYxMyI+PC9wYXRoPjxjaXJjbGUgY3g9IjYiIGN5PSIxOCIgcj0iMyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgiIGN5PSIxNiIgcj0iMyI+PC9jaXJjbGU+PC9zdmc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImZvbnQtc2FucyB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtd2VkZGluZy1nb2xkIHRyYWNraW5nLXdpZGVyIj44OjMwIFBNPC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3M9ImZvbnQtc2VyaWYgdGV4dC14bCB0ZXh0LWZvcmVncm91bmQgbWItMSI+VGhlIENlbGVicmF0aW9uPC9oMz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJmb250LXNhbnMgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPkxhIENpdGFkZWwgVmVudWUsIEJhcm91azwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsL0RNelg2RTRWOXo2ZHNHSDVBP2dfc3Q9YXciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIGNsYXNzPSJhbWVsaWEtdGltZWxpbmUtZGlyZWN0aW9ucyI+PGkgY2xhc3M9ImZhcyBmYS1sb2NhdGlvbi1hcnJvdyI+PC9pPjxzcGFuPkRpcmVjdGlvbnM8L3NwYW4+PC9hPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJoaWRkZW4gbWQ6YmxvY2sgbWQ6dy1bY2FsYyg1MCUtMnJlbSldIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=';document.getElementById('celebration-mount').outerHTML=atob(b);}})();</script>
                                             </div>
                 </div>
             </section>
@@ -1027,7 +1011,7 @@ Khoury</p>
                                                                                                     <button
                                                         class="p-2 rounded-lg hover:bg-muted transition-colors duration-300"
                                                         title="Copy details"
-                                                        onclick="navigator.clipboard.writeText('#123456')">
+                                                        onclick="navigator.clipboard.writeText('20522076')">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                             height="24" viewBox="0 0 24 24" fill="none"
                                                             stroke="currentColor" stroke-width="2"
@@ -1046,7 +1030,7 @@ Khoury</p>
                                                         <span
                                                             class="block font-sans text-xs text-muted-foreground uppercase tracking-wider mb-1">Whish</span>
                                                         <span
-                                                            class="font-mono text-foreground">#123456</span>
+                                                            class="font-mono text-foreground">20522076</span>
                                                     </div>
                                                 </div>
                                                                                     </div>
@@ -1055,7 +1039,7 @@ Khoury</p>
                 </section>
             
             
-                                                <section class="py-20 px-4 bg-wedding-ivory/50">
+                                                <section id="rsvp-section" class="py-20 px-4 bg-wedding-ivory/50">
                         <div class="max-w-xl mx-auto text-center">
                             <h2 class="font-script text-4xl md:text-5xl text-wedding-bronze mb-4"
                                 style="opacity: 1; transform: translateY(0px)">
@@ -1087,7 +1071,7 @@ Khoury</p>
 
                                         <div class="mb-6">
                                             <label class="font-serif text-base text-foreground mb-4 block" style="">
-                                                Are you attending?
+                                                Are you attending the celebration?
                                             </label>
                                             <div class="flex justify-center gap-4">
                                                 <button type="button"
@@ -1125,29 +1109,15 @@ Khoury</p>
                                             </p>
                                         </div>
 
-                                        <div id="names-section" class="mb-6 px-2" style="display:none">
-                                            <label class="font-serif text-sm text-muted-foreground mb-2 block" style="">
-                                                Name(s) of guest(s) attending:
+                                        <div id="name-section" class="mb-6" style="display:none">
+                                            <label class="font-serif text-sm text-muted-foreground mb-2 block">
+                                                Your name:
                                             </label>
-                                            <div class="space-y-3">
-                                                <div id="attendee-1-wrap" class="px-2">
-                                                    <input type="text" name="attendee_1" id="attendee-1"
-                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
-                                                        placeholder="Guest 1 name">
-                                                </div>
-                                                <div id="attendee-2-wrap" class="px-2" style="display:none">
-                                                    <input type="text" name="attendee_2" id="attendee-2"
-                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
-                                                        placeholder="Guest 2 name">
-                                                </div>
-                                                <div id="attendee-3-wrap" class="px-2" style="display:none">
-                                                    <input type="text" name="attendee_3" id="attendee-3"
-                                                        class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
-                                                        placeholder="Guest 3 name">
-                                                </div>
-                                            </div>
-                                            <p id="names-invalid" class="text-red-500 text-sm mt-2" style="display:none">
-                                                Please enter a name for each guest.
+                                            <input type="text" name="attendee_name" id="attendee-name"
+                                                class="w-full rounded-xl border border-wedding-blush/30 bg-background px-4 py-3 font-serif text-foreground focus:outline-none focus:ring-2 focus:ring-wedding-rose/30"
+                                                placeholder="Full name">
+                                            <p id="name-invalid" class="text-red-500 text-sm mt-2" style="display:none">
+                                                Please enter your name.
                                             </p>
                                         </div>
 
@@ -1163,8 +1133,9 @@ Khoury</p>
                                                             </div>
                         </div>
                     </section>
-                            
-            
+                    <script>(function(){var w=window.__wedding;if(!w||w.eventLevel!=='full'){var e=document.getElementById('rsvp-section');if(e)e.parentNode.removeChild(e);}})();</script>
+
+
             <footer class="py-16 px-4 text-center">
                 <div style="opacity: 1; transform: translateY(0px)">
                     <p class="font-script text-3xl md:text-4xl text-wedding-bronze mb-6">
@@ -1518,7 +1489,7 @@ Khoury</p>
             function deselectBtn(btn) { btn.classList.remove('rsvp-btn-selected'); }
 
             var seatsSection = document.getElementById('seats-section');
-            var namesSection = document.getElementById('names-section');
+            var nameSection = document.getElementById('name-section');
             var attendingField = document.getElementById('attending');
 
             // Accept / Decline toggle
@@ -1533,38 +1504,22 @@ Khoury</p>
                     if (fb) fb.style.display = 'none';
                     if (val === 'yes') {
                         if (seatsSection) seatsSection.style.display = 'block';
+                        if (nameSection) nameSection.style.display = 'block';
                     } else {
                         if (seatsSection) seatsSection.style.display = 'none';
-                        if (namesSection) namesSection.style.display = 'none';
+                        if (nameSection) nameSection.style.display = 'none';
                         if (sel) sel.value = '';
-                        ['attendee-1', 'attendee-2', 'attendee-3'].forEach(function(id) {
-                            var el = document.getElementById(id);
-                            if (el) { el.value = ''; el.required = false; }
-                        });
+                        var nameEl = document.getElementById('attendee-name');
+                        if (nameEl) nameEl.value = '';
                     }
                 });
             });
 
-            // Seats count → show/hide name fields
+            // Clear validation messages on change
             if (sel) {
                 sel.addEventListener('change', function() {
-                    var n = parseInt(this.value, 10);
                     var si = document.getElementById('seats-invalid');
                     if (si) si.style.display = 'none';
-                    if (isNaN(n) || n < 1) {
-                        if (namesSection) namesSection.style.display = 'none';
-                        return;
-                    }
-                    if (namesSection) namesSection.style.display = 'block';
-                    for (var i = 1; i <= 3; i++) {
-                        var wrap = document.getElementById('attendee-' + i + '-wrap');
-                        var inp = document.getElementById('attendee-' + i);
-                        if (wrap) wrap.style.display = (i <= n) ? 'block' : 'none';
-                        if (inp) {
-                            inp.required = (i <= n);
-                            if (i > n) inp.value = '';
-                        }
-                    }
                 });
             }
 
@@ -1588,18 +1543,13 @@ Khoury</p>
                         if (si) si.style.display = 'block';
                         return;
                     }
-                    var n = parseInt(seats, 10);
-                    var allNamed = true;
-                    for (var i = 1; i <= n; i++) {
-                        var inp = document.getElementById('attendee-' + i);
-                        if (!inp || !inp.value.trim()) { allNamed = false; break; }
-                    }
-                    if (!allNamed) {
-                        var ni = document.getElementById('names-invalid');
+                    var nameEl = document.getElementById('attendee-name');
+                    if (!nameEl || !nameEl.value.trim()) {
+                        var ni = document.getElementById('name-invalid');
                         if (ni) ni.style.display = 'block';
                         return;
                     }
-                    var ni2 = document.getElementById('names-invalid');
+                    var ni2 = document.getElementById('name-invalid');
                     if (ni2) ni2.style.display = 'none';
                 }
 
@@ -1610,10 +1560,8 @@ Khoury</p>
                 data.append('event_level', eventLevel);
                 if (att === 'yes' && sel && sel.value) {
                     data.append('seats_taken', sel.value);
-                    for (var j = 1; j <= parseInt(sel.value, 10); j++) {
-                        var nameEl = document.getElementById('attendee-' + j);
-                        if (nameEl) data.append('attendee_' + j, nameEl.value.trim());
-                    }
+                    var nameEl2 = document.getElementById('attendee-name');
+                    if (nameEl2) data.append('attendee_name', nameEl2.value.trim());
                 }
 
                 fetch('/', {
