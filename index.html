@@ -148,6 +148,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center bottom;
             display: block;
         }
 
@@ -1457,15 +1458,12 @@
                     if (attendingField) attendingField.value = val;
                     var fb = form.querySelector('.rsvp-invalid-feedback');
                     if (fb) fb.style.display = 'none';
+                    if (nameSection) nameSection.style.display = 'block';
                     if (val === 'yes') {
                         if (seatsSection) seatsSection.style.display = 'block';
-                        if (nameSection) nameSection.style.display = 'block';
                     } else {
                         if (seatsSection) seatsSection.style.display = 'none';
-                        if (nameSection) nameSection.style.display = 'none';
                         if (sel) sel.value = '';
-                        var nameEl = document.getElementById('attendee-name');
-                        if (nameEl) nameEl.value = '';
                     }
                 });
             });
@@ -1498,25 +1496,25 @@
                         if (si) si.style.display = 'block';
                         return;
                     }
-                    var nameEl = document.getElementById('attendee-name');
-                    if (!nameEl || !nameEl.value.trim()) {
-                        var ni = document.getElementById('name-invalid');
-                        if (ni) ni.style.display = 'block';
-                        return;
-                    }
-                    var ni2 = document.getElementById('name-invalid');
-                    if (ni2) ni2.style.display = 'none';
                 }
+
+                var nameEl = document.getElementById('attendee-name');
+                if (!nameEl || !nameEl.value.trim()) {
+                    var ni = document.getElementById('name-invalid');
+                    if (ni) ni.style.display = 'block';
+                    return;
+                }
+                var ni2 = document.getElementById('name-invalid');
+                if (ni2) ni2.style.display = 'none';
 
                 var data = new URLSearchParams();
                 data.append('form-name', 'rsvp');
                 data.append('attending', att);
                 data.append('seats_max', sMax);
                 data.append('event_level', eventLevel);
+                data.append('attendee_name', nameEl.value.trim());
                 if (att === 'yes' && sel && sel.value) {
                     data.append('seats_taken', sel.value);
-                    var nameEl2 = document.getElementById('attendee-name');
-                    if (nameEl2) data.append('attendee_name', nameEl2.value.trim());
                 }
 
                 fetch('/', {
